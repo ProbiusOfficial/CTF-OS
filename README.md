@@ -5,6 +5,15 @@
     <p>专为CTF比赛封装的虚拟机，基于工具集封装多个版本和系统，更多选择，开箱即用！</p>
 </div> 
 
+## TODO
+
+> [!TIP]
+>
+> - [ ] 为Mac RAM架构系列的虚拟机添加适配。  
+> - [ ] Linux 版本的系统  
+> - [ ] 自动化构建 (.sp1 / workflow 构建.iso)  
+> - [ ] 更方便友好的更新方式（增量更新）  
+> - [ ] 更多的环境支持（二进制环境 / ...)  
 
 ## Why CTFos?
 
@@ -165,11 +174,15 @@ Z3求解器
 
 #### 漏洞利用
 
-  - Struts2_19.21.jar 源:https://github.com/abc123info/Struts2VulsScanTools
-  - ThinkphpGUI-1.3-SNAPSHOT.jar 源:https://github.com/Lotus6/ThinkphpGUI/releases/tag/1.3
-  - thinkphp_gui_tools 源:https://github.com/bewhale/thinkphp_gui_tools
-  - ShiroExploit-Deprecated v2.51 源:https://github.com/feihong-cs/ShiroExploit-Deprecated/releases/tag/v2.51
-  - ThinkPHP综合利用工具ShiroExploit v2.4.2 源:https://github.com/bewhale/thinkphp_gui_tools/releases/tag/v2.4.2
+Struts2_19.21.jar 源:https://github.com/abc123info/Struts2VulsScanTools
+
+ThinkphpGUI-1.3-SNAPSHOT.jar 源:https://github.com/Lotus6/ThinkphpGUI/releases/tag/1.3
+
+thinkphp_gui_tools 源:https://github.com/bewhale/thinkphp_gui_tools
+
+ShiroExploit-Deprecated v2.51 源:https://github.com/feihong-cs/ShiroExploit-Deprecated/releases/tag/v2.51
+
+ThinkPHP综合利用工具ShiroExploit v2.4.2 源:https://github.com/bewhale/thinkphp_gui_tools/releases/tag/v2.4.2
 
 ## Wallpaper
 
