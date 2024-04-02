@@ -3,61 +3,67 @@
     <br> </br>
     <p> An Integrated OS For CTF(Capture The Flag)</p>
     <p>专为CTF比赛封装的虚拟机，基于工具集封装多个版本和系统，更多选择，开箱即用！</p>
+    <p>项目地址:https://github.com/ProbiusOfficial/CTF-OS</p>
+	<p>Version Beta 2.0</p>
 </div> 
-
-## TODO
-
-> [!TIP]
->
-> - [ ] 为 Mac ARM 架构系列的虚拟机添加适配。  
-> - [ ] Linux 版本的系统  
-> - [ ] 自动化构建 (.sp1 / workflow 构建.iso)  
-> - [ ] 更方便友好的更新方式（增量更新）  
-> - [x] 更多的环境支持（二进制环境 / ...)  
-
-## Why CTFos?
-
-市面上其实有很多同类型的系统 —— 但这里的同类型指的是在安全和渗透相关的，而对于CTFs来讲，它们是臃肿的，而且都侧重在Web安全方面，并不友好。
-
-当然，更多的情况是，在CTF比赛越来越普及的今天，它渗透到了各个行业里面，想象一下，上学打了几年CTF好不容易毕业了，跑到其他行业养老突然被领导拉着语重心长的说：“听说你上学的时候，比赛挺厉害的，正好最近我们有个行业赛，就是CTF，你上吧，顺便带带你的同事们” —— 
-
-**本项目用于快速构建CTF的做题环境，避免CTF中各类软件环境对宿主机造成污染。**
-
-**适用人群**：CTF入门选手，各行业从业人员，安全相关工作人员但不想在工作机上安装CTF一些奇奇怪怪的软件......
 
 ## About
 
-Windows 版本为beta测试第二版，也是最接近正式版Windows版本的系统。
+该版本为beta测试第二版，也是最接近正式版Windows版本的系统。
 
 系统基于 WIndows 10 22H2 10.0.19045.3803 镜像制作，使用 软媒魔方 和 Dism++ 进行了部分优化和精简，内置 Ubuntu 22.04.3 on WSL2 / Arch Linux on WSL2 子系统。
 
-其他系统依然在构建中，我们会尽快完成让他们与各位见面ww
+> [!Warning]
+>
+> 本系统完全开源免费，如您在获取本系统的过程中有遇到付费情况，请及时向我反馈并且举报！
+
+## 鸣谢
+
+在此版系统中得到了几位师傅的大力支持，在这里特表感谢:
+
+roderick01 (@RoderickChan) / Cain (@CainYzb) 师傅对PWN环境配置的答疑和帮助.
+
+B.M.K 师傅对逆向环境配置的帮助.
+
+Lov3 (@n-WN) 师傅对密码学环境配置的大力支持，以及其对Mac ARM架构的规划 (即将发版 :p)
 
 ## Statement
 
-本系统中所出现的各类软件 / 工具 均来源于开源渠道，所有组件的来源均以注明 (详细见 **Detail** 部分)
-
-由于时间和其他原因，系统并不能有效包含所有的CTF工具，不过我们会逐步更新和完善它，还请关注后续发版。
+本系统中所出现的各类软件 / 工具 均来源于开源渠道，所有组件的来源均以注明.
 
 当然，如果您对系统后续更新有建议，请务必开 issues 告知我们。
 
-本项目为 [Hello-CTF](https://github.com/ProbiusOfficial/Hello-CTF) 的子项目，大部分工具软件的选择基于 https://hello-ctf.com/ToolKit/ ,欢迎关注我们的公众号 Hello-CTF ，获取CTF相关资讯：
+本项目为 [Hello-CTF](https://github.com/ProbiusOfficial/Hello-CTF) (https://hello-ctf.com/)的子项目，大部分工具软件的选择基于 https://hello-ctf.com/ToolKit/ .
 
-![Qr](./img/Qr.jpg)
+如有其他疑问或者建议请在 Github 上提出 issue ：https://github.com/ProbiusOfficial/CTF-OS
 
-## DEMO
+当然也可以关注 Hello-CTF 的公众号，直接发私信联系：
 
-![Desktop](./Demo/Desktop.png)
+![Qr](https://nssctf.wdf.ink//img/WDTJ/202404030043654.jpg)
 
-![Terminal_Design](./Demo/Terminal_Design.png)
+## Update
 
-![Ubuntu_info](./Demo/Ubuntu_info.png)
+依据 issue 更新完善了剩余环境。
 
-![Toolkit](./Demo/Toolkit.png)
+修复了上个版本中 冰蝎 打开时报错的问题.
 
-![PWN](./Demo/PWN.png)
+密码学增加了Arch系统，并部署最新版本的SageMath.
 
-## Detail_Beta版本(试运行)
+升级WSL1系统为WSL2.
+
+Ubuntu WSL2 系统添加了PWN环境.
+
+> [!Note]
+>
+> 注意，虽然WSL2具有完整内核，但是其内核并非原生，故只能解决一些入门赛题，可能会出现不可预料的问题，CTF-OS 在正式版本时会同时发行专用于PWN的Linux系统，敬请期待后续发版.
+
+配置了逆向环境和所需工具 —— 注意，由于安卓逆向需求的虚拟机会占用大量存储空间，而且考虑到大多数师傅暂时不会有安卓动调需求，安卓逆向只配置了部分工具。
+
+MISC工具增加完善了各类型的隐写工具，添加了取证工具.
+
+更多差异请查阅Detail部分的软件列表，注意由于某些原因，部分软件不会注明.
+
+## Detail
 
 ### 子系统信息
 
@@ -77,7 +83,7 @@ Windows 版本： 10.0.19045.3803
 >
 > 如果您想继续在宿主机中使用WSL，请对该系统的WSL2进行降级，并且完全关闭**虚拟机的HV服务**.
 
-![WSL2](./Demo/WSL2.png)
+![WSL2](https://nssctf.wdf.ink//img/WDTJ/202404030027053.png)
 
 ### Windows 信息
 
@@ -221,29 +227,26 @@ gcc 13.2.0 @msys2
 | ShiroExploit-Deprecated          | v2.51  | [GitHub](https://github.com/feihong-cs/ShiroExploit-Deprecated/releases/tag/v2.51) |
 | ThinkPHP综合利用工具ShiroExploit | v2.4.2           | [GitHub](https://github.com/bewhale/thinkphp_gui_tools/releases/tag/v2.4.2) |
 
-## Wallpaper
+## Demo
 
-![Flag_with_Windows_color](./wallpaper/Flag_with_Windows_color.png)
+![Web](https://nssctf.wdf.ink//img/WDTJ/202404030124438.png)
 
-![CTFos](./wallpaper/CTFos.png)
+![Forensics](https://nssctf.wdf.ink//img/WDTJ/202404030124607.png)
 
-![Flag_with_Windows](./wallpaper/Flag_with_Windows.png)
+![Reverse](https://nssctf.wdf.ink//img/WDTJ/202404030124693.png)
 
-![Windows_Terminal](./wallpaper/Windows_Terminal.png)
+![PWN](https://nssctf.wdf.ink//img/WDTJ/202404030124092.png)
 
-![PowerShell](./wallpaper/PowerShell.png)
+## New Wallpaper
 
-![Ubuntu_Shell](./wallpaper/Ubuntu_Shell.png)
-
-![Arch Linux](./wallpaper/ArchLinux.png)
+![ArchLinux](https://nssctf.wdf.ink//img/WDTJ/202404030126895.png)
 
 ## 赞助我们？
 
 <p float="left">
-  <img src="img/vxQR.png" width="28%" />
-  <img src="img/zfbQR.png" width="28%" />
+  <img src="https://nssctf.wdf.ink//img/WDTJ/202404030130413.png" width="28%" />
+  <img src="https://nssctf.wdf.ink//img/WDTJ/202404030131244.png" width="28%" />
 </p>
-
 您的赞助将帮助我们完善项目ww
 
 请在备注中注明，以便我们在项目中公开向您表示感谢.
