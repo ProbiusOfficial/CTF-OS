@@ -5,6 +5,17 @@
     <p>专为CTF比赛封装的虚拟机，基于工具集封装多个版本和系统，更多选择，开箱即用！</p>
 </div> 
 
+## 赞助我们？
+
+<p float="left">
+  <img src="img/vxQR.png" width="28%" />
+  <img src="img/zfbQR.png" width="28%" />
+</p>
+
+您的赞助将帮助我们完善项目ww
+
+请在备注中注明，以便我们在项目中公开向您表示感谢.
+
 ## TODO
 
 > [!TIP]
@@ -236,17 +247,6 @@ gcc 13.2.0 @msys2
 ![Ubuntu_Shell](./wallpaper/Ubuntu_Shell.png)
 
 ![Arch Linux](./wallpaper/ArchLinux.png)
-
-## 赞助我们？
-
-<p float="left">
-  <img src="img/vxQR.png" width="28%" />
-  <img src="img/zfbQR.png" width="28%" />
-</p>
-
-您的赞助将帮助我们完善项目ww
-
-请在备注中注明，以便我们在项目中公开向您表示感谢.
 
 ## End.
 
