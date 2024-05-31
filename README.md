@@ -92,6 +92,12 @@ Windows 版本： 10.0.19045.3803
 
 ### Windows 信息
 
+#### 密码
+
+Windows Password: hello-ctf.com
+
+Ubuntu / Arch Password: ctfos
+
 #### 系统环境
 
 ```
