@@ -180,6 +180,7 @@ gcc 13.2.0 @msys2
 | dnSpyEX/dnSpy          | v6.5.0                       | [GitHub](https://github.com/dnSpyEx/dnSpy/releases/tag/v6.5.0) |
 | Ghidra                 | v11.0.2                      | [GitHub](https://github.com/NationalSecurityAgency/ghidra/releases/tag/Ghidra_11.0.2_build) |
 | Resource Hacker        | v5.2.7                       | [angusj.com](https://www.angusj.com/resourcehacker/)         |
+| Resource Cracker       | v1.0.0                       | [pelock.com](https://www.pelock.com/products/resource-cracker) |
 | 吾爱破解专用版Ollydbg  |                              | [52pojie.cn](https://down.52pojie.cn/Tools/Debuggers/)       |
 | Windbg                 | v10.0.22621.2428             | [52pojie.cn](https://down.52pojie.cn/Tools/Debuggers/)       |
 | Cheat Engine           | v7.5                         | [cheatengine.org](https://www.cheatengine.org/)              |
